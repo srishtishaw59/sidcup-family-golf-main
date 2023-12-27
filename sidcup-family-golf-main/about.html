@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #305f3b;
+    color: #fff;
+
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+img{
+    border-image: round;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(177, 156, 197);
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: yellow;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.abcd{
+    margin-right: 200px;
+}
+
+
+</style>
+<body>
+    
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/47759140/2920923015.jpg">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>WHO WE ARE
+                      Our dedicated private wealth research team analyzes the financial markets and publishes timely research reports on a range of companies and sectors.
+                      <br>
+                      <br>
+                      We believe in:
+                      <br>
+                      • ‘Protecting capital’ first and ‘building capital’ second
+                      • High quality assets and impose rigorous quality tests
+                      • Cost efficient solutions to maximize returns to investors
+                      • Preserving wealth through long-term investment portfolios
+                      • Seeking investments that generate high levels of free cash flow, as in our view a portfolio is only as good as the cash flow it generates</p>
+
+                     <!----  <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Site</span><br>Designing web/app interfaces</li>
+                                <li><span>Web Development</span><br>HTML and CSS</li>
+                                <li><span>app Development</span><br>c programming</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022-current</span><br>Designing web/app training at University of Kolkata</li>
+                                <li><span>2020-2021</span><br>HTML and CSS training at JNNYCC Institue</li>
+                                <li><span>2019-</span><br>no skills</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-2020</span><br>class 10 at Saktinagar High School</li>
+                                <li><span>2021-2022</span><br> class 11-12 at Kabi Bijoylal H.S. Institue</li>
+                                <li><span>2023 -current</span><br>BCA(SOftwar developer,programming) at University Of Culcutta</li>
+                            </ul>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="abcd">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html> 

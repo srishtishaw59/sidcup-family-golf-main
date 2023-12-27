@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            background: url(image/contactbg.png.jpeg) no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .contact-section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .contact-info{
+            color:#fff;
+            max-width: 500px;
+            line-height: 65px;
+            padding-left: 50px;
+            font-size: 18px;
+        }
+        .contact-info i{
+            margin-right: 20px;
+            font-size: 25px;
+
+        }
+        .contact-form{
+            max-width: 700px;
+            margin-right: 50px;
+        }
+        .contact-info, .contact-form{
+            flex: 1;
+        }
+        .contact-form h2{
+            color: #fff;
+            text-align: center;
+            font-size: 35px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .contact-form .text-box{
+            background: #000;
+            color: #fff;
+            border: none;
+            width: cals(50% - 10px);
+            height: 50px;
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+
+        }
+        .contact-form .text-box:first-child{
+            margin-right: 15px;
+
+        }
+        .contact-form textarea{
+            background: #000;
+            color: #fff;
+            border: none;
+            width: 100px;
+            padding: 12px;
+            font-size: 15px;
+            min-height: 200px;
+            max-height: 400px;
+            resize: vertical;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .contact-form .send-btn{
+            float: right;
+            background: #2E94E3;
+            color: #fff;
+            border: none;
+            width: 120px;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.4s;
+            transition-property: background;
+
+        }
+        .contact-form .send-btn:hover{
+            background: #0582E3;
+
+        }
+        @media screen and (max-width:950px) {
+            .contact-section{
+                flex-direction: column;
+            }
+            .contact-info .contact-form{
+                margin: 30px 50px;
+            }
+            .contact-form h2{
+                font-size: 30px;
+            }
+            .contact-form .text-box{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="contact-section">
+        <div class="contact-info">
+            <div> <i class="fa-solid fa-location-dot"></i>kanikanara,West Bengal</div>
+            <div> <i class="fa-solid fa-envelope"></i>srishtishaw59@gmail.com</div>
+            <div> <i class="fa-solid fa-phone"></i>+91 8240588228</div>
+            <div> <i class="fa-solid fa-clock"></i>mon-fri </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us </h2>
+            <form class="contact" action="" method="post">
+                <input type="text" name="name" class="text-box" placeholder="Your Name"><br><br>
+                <input type="email" name="email" class="text-box" placeholder="Your Email"><br><br>
+                <textarea name="message" id="" rows="5" placeholder="Your Message"></textarea><br><br>
+                <input type="submit" name="submit" class="send btn" value="Send">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
